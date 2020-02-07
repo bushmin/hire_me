@@ -1,0 +1,291 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'PT Mono', monospace;
+}
+ h2{
+	font-weight: normal;
+}
+a{
+	text-decoration: none;
+	color: cadetblue;
+	font-weight: bold;
+}
+
+html{
+	background-image: linear-gradient(to right, #ffffff, #fafafa, #f5f5f5, #f1f1f1, #ececec);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #ffffff;
+	min-height: 100vh;
+	color: black;
+	scroll-behavior: smooth;
+	font-size: 16px;
+}
+body{
+	margin: 0 auto;
+	padding: 2em 4em;
+	max-width: 900px;
+	
+	overflow-x: hidden;
+}
+.starting-container{
+	height: 88vh;
+	text-align: center;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hello{
+	font-size: 4em;
+}
+
+.biggest-paragraph{
+	font-size: 2em;
+	margin: 0.6em auto 0;
+}
+.sub-paragraph{
+	font-size: 1.3em;
+	margin: 0.6em auto;
+}
+.big-paragraph{
+	font-size: 1.3em;
+	margin: 0.6em auto;
+	text-align: justify;
+}
+.normal-paragraph{
+	font-size: 1em;
+	text-align: justify;
+}
+
+.sep-big{
+	height: 5em;
+}
+.sep-normal{
+	height: 3em;
+}
+
+.normal-cv{
+	font-size: 1.5em;
+	margin: 1em auto 0;
+}
+
+.tech{
+	display: inline-block;
+	background-color: #4b4150;
+	color: white;
+	padding: 0.3em 1em;
+	margin: 0 0.2em 0.6em;
+	border-radius: 0.3em;
+}
+.tech-front{
+	background-color: #c45850;
+}
+.tech-mobile{
+	background-color: #d1916b;
+}
+.tech-back{
+	background-color: #3cba9f;
+}
+.tech-server{
+	background-color: #3e95cd;
+}
+.tech-other{
+	background-color: transparent;
+	color: black;
+	border: 1px solid #000;
+}
+
+
+
+.myprojects-annotation{
+	padding: 3em;
+	margin: 3em auto 0;
+	border-top: 1px solid #000;
+	text-align: center;
+}
+
+.header{
+	text-align: center;
+    font-size: 2em;
+	padding-top: 15px;
+}
+img {
+	width: 100%;
+	display: block;
+}
+li {
+	cursor: pointer;
+}
+.item img {
+	visibility: hidden;
+}
+.container {
+	margin: 3rem auto;
+	padding: 1rem 0 2.4rem;
+	text-align: center;
+	max-width: 50rem;
+}
+
+
+.job{
+	width: 27.5em;
+	height: 23.4375em;
+	margin: 1em auto;
+	position: relative;
+	overflow: hidden;
+}
+.job-inner{
+	position: absolute;
+	top: 25%;
+	width: 100%;
+}
+  .job-header{
+	font-size: 3.5em;
+	font-weight: bold;
+	  position: relative;
+  }
+.job-undertext{
+	font-weight: bold;
+}
+
+.penrose{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 17em;
+    height: 13.6em;
+	transform: scale(1.7) translate(1.5625em, 0.8123em) rotate(60.5deg);
+	pointer-events: none;
+}
+
+.penrose-path {
+	stroke-dasharray: 3.3125em 4.375em;
+	animation: dash 2s linear infinite;
+  }
+
+  @keyframes dash {
+	to {
+		stroke-dashoffset: -7.6875em;
+	}
+  }
+
+  .question{
+	  font-size: 1.4em;
+	  font-weight: bold;
+	  padding: 2em 0 1em 3em;
+	  position: relative;
+  }
+  .question::before{
+	content: 'Q:';
+	position: absolute;
+	top: 0.7em;
+    left: 0;
+	font-size: 1.9em;
+	font-weight: normal;
+	animation: squigglevision 0.35s infinite;
+  }
+
+  .answer{
+	padding: 0.5em 0 1em 4.2em;
+	position: relative;
+}
+.answer::before{
+  content: 'A:';
+  position: absolute;
+  top: -0.2em;
+  left: 0;
+  font-size: 2.66em;
+  animation: squigglevision 0.35s infinite;
+}
+
+.final-links{
+	text-align: center;
+	margin: 8em auto 3em;
+	padding: 2em 4em;
+	display: table;
+}
+.social-block{
+	padding-top: 1em;
+}
+.logo{
+	display: inline-block;
+	cursor: pointer;
+	width: 3em;
+	height: 3em;
+	margin: 1em;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.vk{
+	background-image: url('img/vk.svg');
+}
+.fb{
+	background-image: url('img/fb.svg');
+}
+.tg{
+	background-image: url('img/tg.svg');
+}
+.mail{
+	background-image: url('img/mail.svg');
+}
+.git{
+	background-image: url('img/github.svg');
+	margin: -0.6em 0 0;
+	width: 2.5em;
+	height: 2.5em;
+}
+
+@media only screen and (max-width: 617px), screen and (max-height: 650px){
+
+	html{
+		font-size: 12px;
+	}
+	body{
+		padding: 1em;
+	}
+	.job{
+		margin-top: 0;
+	}
+  	.penrose{
+		width: 21em;
+		height: 18.6em;
+		transform: scale(1.2) translate(2em,-1em) rotate(60.5deg);
+	}
+	.starting-container{
+		height: 80vh;
+	}
+	.final-links{
+		margin: 3em auto;
+		padding: 2em;
+	}
+
+}
+
+@media only screen and (max-width: 358px){
+	.starting-container {
+		min-height: 425px;
+	}
+	.hello{
+		font-size: 3em;
+	}
+	.biggest-paragraph{
+		margin: 0.2em auto 0;
+	}
+	.job {
+		font-size: 10px;
+		margin-top: 1em;
+	}
+	.penrose{
+		width: 27em;
+		height: 22em;
+		transform: scale(1.06) translate(2.5em,-2.5em) rotate(60.5deg);
+	}
+	.final-links{
+		padding: 2em 6em;
+	}
+}
