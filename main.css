@@ -289,3 +289,9 @@ li {
 		padding: 2em 6em;
 	}
 }
+
+@-moz-document url-prefix() {
+	@keyframes squigglevision{
+	  
+	}
+  }  
