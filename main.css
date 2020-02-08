@@ -210,9 +210,10 @@ li {
 	padding: 2em 4em;
 	display: table;
 }
-.social-block{
-	padding-top: 1em;
+.final-links-header{
+	padding-bottom: 1em;
 }
+
 .logo{
 	display: inline-block;
 	cursor: pointer;
