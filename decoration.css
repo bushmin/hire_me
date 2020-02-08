@@ -91,11 +91,11 @@
 .item:nth-child(13) a{ background-image: url('img/raif.png'); }
 .item:nth-child(14) a{ background-image: url('img/kzbrief.png'); background-size: 61%;}
 
-.item-mobile:nth-child(1) a{ background-image: url('img/uvelka.png');     background-size: 100%;}
-.item-mobile:nth-child(2) a{ background-image: url('img/bb.png'); background-size: 81%;}
-.item-mobile:nth-child(3) a{ background-image: url('img/yokohama.png');     background-size: 100%;}
-.item-mobile:nth-child(4) a{ background-image: url('img/harmony.png');background-size: 100%;}
-.item-mobile:nth-child(5) a{ background-image: url('img/olympus.png'); background-size: 100%;} 
+.item-mobile:nth-child(3) a{ background-image: url('img/uvelka.png');     background-size: 100%;}
+.item-mobile:nth-child(5) a{ background-image: url('img/bb.png'); background-size: 81%;}
+.item-mobile:nth-child(1) a{ background-image: url('img/yokohama.png');     background-size: 100%;}
+.item-mobile:nth-child(2) a{ background-image: url('img/harmony.png');background-size: 100%;}
+.item-mobile:nth-child(4) a{ background-image: url('img/olympus.png'); background-size: 100%;} 
 
 
 
@@ -203,12 +203,14 @@ details summary {
 	margin: 0 auto;
 	border: 2px solid #000;
 	pointer-events: none;
+	transform: translate3d(0,0,0);
 	animation: squigglevision 0.35s infinite;
 }
   .item:hover{
 	animation: squigglevision 0.45s infinite;
   }
   .squiggle {
+	  transform: translate3d(0,0,0);
 	animation: squigglevision 0.35s infinite;
   }
   @keyframes squigglevision {

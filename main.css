@@ -186,6 +186,7 @@ li {
     left: 0;
 	font-size: 1.9em;
 	font-weight: normal;
+	transform: translate3d(0,0,0);
 	animation: squigglevision 0.35s infinite;
   }
 
@@ -199,6 +200,7 @@ li {
   top: -0.2em;
   left: 0;
   font-size: 2.66em;
+  transform: translate3d(0,0,0);
   animation: squigglevision 0.35s infinite;
 }
 
@@ -256,6 +258,16 @@ li {
 		height: 18.6em;
 		transform: scale(1.2) translate(2em,-1em) rotate(60.5deg);
 	}
+	.penrose-path {
+		stroke-dasharray: 3.3125em 3.7em;
+		animation: dash 2s linear infinite;
+	  }
+	
+	  @keyframes dash {
+		to {
+			stroke-dashoffset: -7.0125em;
+		}
+	  }
 	.starting-container{
 		height: 80vh;
 	}
@@ -285,6 +297,16 @@ li {
 		height: 22em;
 		transform: scale(1.06) translate(2.5em,-2.5em) rotate(60.5deg);
 	}
+	.penrose-path {
+		stroke-dasharray: 4.2em 4.2em;
+		animation: dash 2s linear infinite;
+	  }
+	
+	  @keyframes dash {
+		to {
+			stroke-dashoffset: -8.4em;
+		}
+	  }
 	.final-links{
 		padding: 2em 6em;
 	}
