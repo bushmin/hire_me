@@ -317,3 +317,9 @@ li {
 	  
 	}
   }  
+
+  @supports (-webkit-overflow-scrolling: touch) {
+	@keyframes squigglevision{
+	  
+	}
+  }
