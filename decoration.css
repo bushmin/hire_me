@@ -203,8 +203,8 @@ details summary {
 	margin: 0 auto;
 	border: 2px solid #000;
 	pointer-events: none;
-	transform: translate3d(0,0,0);
-	animation: squigglevision 0.35s infinite;
+ 	transform: translate3d(0,0,0);
+	animation: squigglevision 0.35s infinite; 
 }
   .item:hover{
 	animation: squigglevision 0.45s infinite;
@@ -213,20 +213,47 @@ details summary {
 	  transform: translate3d(0,0,0);
 	animation: squigglevision 0.35s infinite;
   }
-  @keyframes squigglevision {
+  @-webkit-@keyframes squigglevision {
 	0% {
+		-webkit-filter: url("#squiggly-0");
 	  filter: url("#squiggly-0");
 	}
-	25% {
+	20% {
+		-webkit-filter: url("#squiggly-1");
 	  filter: url("#squiggly-1");
 	}
-	50% {
+	40% {
+		-webkit-filter: url("#squiggly-2");
 	  filter: url("#squiggly-2");
 	}
-	75% {
+	60% {
+		-webkit-filter: url("#squiggly-3");
 	  filter: url("#squiggly-3");
 	}
-	100% {
+	80% {
+		-webkit-filter: url("#squiggly-4");
+	  filter: url("#squiggly-4");
+	}
+  }
+  @keyframes squigglevision {
+	0% {
+		-webkit-filter: url("#squiggly-0");
+	  filter: url("#squiggly-0");
+	}
+	20% {
+		-webkit-filter: url("#squiggly-1");
+	  filter: url("#squiggly-1");
+	}
+	40% {
+		-webkit-filter: url("#squiggly-2");
+	  filter: url("#squiggly-2");
+	}
+	60% {
+		-webkit-filter: url("#squiggly-3");
+	  filter: url("#squiggly-3");
+	}
+	80% {
+		-webkit-filter: url("#squiggly-4");
 	  filter: url("#squiggly-4");
 	}
   }

@@ -224,6 +224,9 @@ li {
 	background-repeat: no-repeat;
 	background-position: center;
 }
+.logo:hover{
+	animation: squigglevision 0.45s infinite;
+  }
 .vk{
 	background-image: url('img/kont.svg');
 }
