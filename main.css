@@ -339,15 +339,13 @@ li {
 			filter: url("#squiggly-9");
 		}
 }
-
-/* @-moz-document url-prefix() {
-	@keyframes squigglevision{
-	  
-	}
+}
+ 	@-moz-document url-prefix() {
+		@media (pointer:coarse){
+			@keyframes squigglevision{}
+		}
   }  
 
   @supports (-webkit-overflow-scrolling: touch) {
-	@keyframes squigglevision{
-	  
-	}
-  } */
+		@keyframes squigglevision{}
+  }
