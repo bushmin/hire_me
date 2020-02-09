@@ -348,4 +348,8 @@ li {
 
   @supports (-webkit-overflow-scrolling: touch) {
 		@keyframes squigglevision{}
+		.box-line::before{
+		 -webkit-filter: none;
+		 filter: none;
+	}
   }
