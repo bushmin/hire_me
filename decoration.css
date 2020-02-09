@@ -204,36 +204,17 @@ details summary {
 	border: 2px solid #000;
 	pointer-events: none;
  	transform: translate3d(0,0,0);
-	animation: squigglevision 0.35s infinite; 
+	 -webkit-filter: url("#squiggly-0");
+	 filter: url("#squiggly-0");
 }
   .item:hover{
-	animation: squigglevision 0.45s infinite;
+	 animation: squigglevision 0.45s infinite; 
   }
   .squiggle {
-	  transform: translate3d(0,0,0);
-	animation: squigglevision 0.35s infinite;
-  }
-  @-webkit-@keyframes squigglevision {
-	0% {
+		transform: translate3d(0,0,0);
 		-webkit-filter: url("#squiggly-0");
-	  filter: url("#squiggly-0");
-	}
-	20% {
-		-webkit-filter: url("#squiggly-1");
-	  filter: url("#squiggly-1");
-	}
-	40% {
-		-webkit-filter: url("#squiggly-2");
-	  filter: url("#squiggly-2");
-	}
-	60% {
-		-webkit-filter: url("#squiggly-3");
-	  filter: url("#squiggly-3");
-	}
-	80% {
-		-webkit-filter: url("#squiggly-4");
-	  filter: url("#squiggly-4");
-	}
+		filter: url("#squiggly-0");
+	 animation: squigglevision 0.35s infinite; 
   }
   @keyframes squigglevision {
 	0% {

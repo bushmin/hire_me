@@ -316,7 +316,31 @@ li {
 	}
 }
 
-@-moz-document url-prefix() {
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0), not all and (min-resolution:.001dpcm) { 
+	@keyframes squigglevision {
+		0% {
+			-webkit-filter: url("#squiggly-5");
+			filter: url("#squiggly-5");
+		}
+		20% {
+			-webkit-filter: url("#squiggly-6");
+			filter: url("#squiggly-6");
+		}
+		40% {
+			-webkit-filter: url("#squiggly-7");
+			filter: url("#squiggly-7");
+		}
+		60% {
+			-webkit-filter: url("#squiggly-8");
+			filter: url("#squiggly-8");
+		}
+		80% {
+			-webkit-filter: url("#squiggly-9");
+			filter: url("#squiggly-9");
+		}
+}
+
+/* @-moz-document url-prefix() {
 	@keyframes squigglevision{
 	  
 	}
@@ -326,4 +350,4 @@ li {
 	@keyframes squigglevision{
 	  
 	}
-  }
+  } */
